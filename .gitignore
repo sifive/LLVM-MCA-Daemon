@@ -1,3 +1,4 @@
 build/
 .build/
 .build*/
+plugins/qemu-broker/Serialization/mcad_generated.h
