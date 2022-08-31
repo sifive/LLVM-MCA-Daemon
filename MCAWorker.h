@@ -30,6 +30,7 @@ class PipelineOptions;
 class PipelinePrinter;
 class InstrDesc;
 class Instruction;
+class CustomBehaviour;
 } // end namespace mca
 
 namespace mcad {
@@ -54,6 +55,8 @@ class MCAWorker {
   // SummaryView will only take reference of it.
   std::function<size_t(void)> GetTraceMISize;
 
+
+  mca::CustomBehaviour *CB;
   mca::IncrementalSourceMgr SrcMgr;
 
   std::unordered_map<const mca::InstrDesc*,
